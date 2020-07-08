@@ -38,3 +38,66 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*services*/
+
+.services {
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.services__inner{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+}
+.services__items {
+	max-width: 22%;
+	opacity: 0.6;
+	color: #000;
+}
+.services__items:hover .services__text:after{
+	background:#c7b299;
+}
+.services__items:hover .services__titles{
+	color: #c7b299;
+}
+.services__items:hover .services__icon{
+	opacity: .3;
+}
+.services__icon {
+}
+.services__titles {
+	margin-top: 35px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.services__text {
+	margin-top: 25px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	position: relative;
+	padding-bottom: 36px;
+}
+.services__text:after{
+	content: "";
+	background: #000;
+	width: 75px;
+	height: 2px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: .4;
+}
