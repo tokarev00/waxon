@@ -157,4 +157,43 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: #ffffff;
+	font-family: 'Montserrat' sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.exp__points {
+	text-align: center;
+	position: relative;
+	padding-bottom: 30px;
+}
+.exp__info {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 65px;
+}
+
+.exp__point-number {
+	font-size: 48px;
+}
+.exp__point-img {
+	margin-bottom: 28px;
+}
+.exp__point-title{
+	font-size: 14px;
+	color: #c7b299;
+	padding-top: 21px;
+}
+
+.exp__points:after {
+    content: "";
+    background: #ffffff;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	opacity: .7;
 }
