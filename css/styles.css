@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding-top: 15px;
 }
 .purchise__btn {
-	margin-top: 50px;
+	margin: 50px 0;
 }
 
 
@@ -204,7 +204,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .project-btn:hover {
 	background-color: #998675;
 	color: #ffffff;
-	
+}
+a.project__btn2 {
+	color: #ffffff;
+	margin-top: 40px;
 }
 
 
