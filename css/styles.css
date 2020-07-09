@@ -19,7 +19,7 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
-	line-height: 1; чxyiiii
+	line-height: 1; 
 	font-size: 14px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -100,4 +100,61 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	right: 0;
 	left: 0;
 	opacity: .4;
+}
+
+.video {
+	background-image: url('../images/photo.jpg');
+	min-height: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;	
+	color: #ffffff;
+}
+.video__icon {
+	padding-top: 220px;
+}
+.video__title {
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;	
+	padding-top: 60px;
+}
+.video__text {
+	padding: 30px 0 40px 0;
+	line-height: 24px;
+}
+.video__time {
+	color: #c7b299;
+	font-size: 14px;
+}
+.mobile {
+	background-color: #fbfaf8;
+	padding-top: 80px;
+	color: #8c8c8c;
+}
+.mobile__content {
+	display: flex;
+}
+.mobile__img {
+	margin-left: 75px;
+}
+.mobile__info {
+	width: 670px;
+}
+.mobile__title {
+	font-size: 30px;
+	padding-bottom: 40px;
+	padding-top: 115px;
+	color: #555555;
+}
+.mobile__text {
+	line-height: 28px;
+	padding-bottom: 77px;
+}
+.exp {
+	min-height: 300px;
+	background-image: url('../images/exp-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
