@@ -12,6 +12,9 @@
 }
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
+a:visited {
+	color: transparent;
+}
 
 nav,footer,header,aside{display: block;}
 
@@ -102,7 +105,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	opacity: .4;
 }
 
-.video {
+.video,
+.video a {
 	background-image: url('../images/photo.jpg');
 	min-height: 700px;
 	background-position: center;
@@ -111,8 +115,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-align: center;	
 	color: #ffffff;
 }
+.video__text,
+.video__title {
+	transition: transform .2s;
+}
+.video__text:hover,
+.video__title:hover {
+	transform: scale(1.1);
+}
 .video__icon {
 	padding-top: 220px;
+}
+.video__icon:hover {
+	cursor: pointer;
 }
 .video__title {
 	font-size: 30px;
