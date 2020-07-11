@@ -292,7 +292,7 @@ a.nav__links:hover{
 	justify-content: space-between;
 }
 .purchise__info {
-	margin-top: 55px;
+	margin-top: 48px;
 	
 }
 .purchise__title {
@@ -343,7 +343,8 @@ a.purchise__btn {
 	border: 1px solid #ebebeb;
 	border-radius: 4%;
 	margin: 5px;
-	transition: .3s;	
+	transition: .3s;
+	
 }
 .project-btn:hover {
 	background-color: #998675;
