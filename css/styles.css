@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .header {
 	min-height: 100vh;
 	min-width: 100vw;
-	background: url(../images/slider/bg.jpg) center / cover no-repeat;
+	background: url(../images/slider/bg.jpg) center / cover no-repeat fixed;
 	position: relative;
 	padding-bottom: 40px;
 	padding-top: 40px;
@@ -283,7 +283,11 @@ a.nav__links:hover{
 	opacity: .4;
 }
 .purchise {
-	background-image: url('../images/purchise.jpg');
+	background: rgb(34,28,26);
+	background: -moz-linear-gradient(left,  rgba(34,28,26,1) 0%, rgba(77,51,39,1) 100%);
+	background: -webkit-linear-gradient(left,  rgba(34,28,26,1) 0%,rgba(77,51,39,1) 100%);
+	background: linear-gradient(to right,  rgba(34,28,26,1) 0%,rgba(77,51,39,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221c1a', endColorstr='#4d3327',GradientType=1 );
 	min-height: 150px;
 	color: #615855;
 }
@@ -412,6 +416,7 @@ a.purchise__btn {
 .video,
 .video a {
 	background-image: url('../images/photo.jpg');
+	background-image: center	no-reapeat fixed;
 	min-height: 700px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -657,4 +662,5 @@ line-height: 24px;
 	display: flex;
 	justify-content: space-between;
 	padding: 45px 0;
+	
 }
