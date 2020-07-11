@@ -28,6 +28,7 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
 }
 input,button,textarea{font-family:inherit;}
 
@@ -88,6 +89,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 10;
 }
 .header__logo {}
 .logo {
@@ -115,6 +117,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 14px;
 	vertical-align: middle;
 }
+.nav__links:last-child{
+	margin-right:0;
+}
 a.nav__links{
 	color: #fff;
 }
@@ -124,32 +129,38 @@ a.nav__links:hover{
 .nav__links_icon:not(:last-child){
 	margin-left: 60px;
 }
-/*header__content*/
-.header__content {
+
+/*slider__item*/
+.slider{
+	min-width: 0;
+	position: relative;
+}
+.slider__item{
+	min-width: 0;
 	max-width: 600px;
-	margin: 280px auto 380px;
+	margin: 280px auto 250px;
 	text-align: center;
 	color: #fff;
 }
-.header__sup-title {
+.slider__sup-title {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
 	font-size: 36px;
 }
-.header__title {
+.slider__title {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	font-size: 52px;
 	margin-top: 25px;
 	margin-bottom: 30px;
 }
-.header__text {
+.slider__text {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 24px;
 	margin-bottom: 50px;
 }
-.header__btn {
+.slider__btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -164,8 +175,53 @@ a.nav__links:hover{
 	border-radius: 5px;
 	box-shadow: inset 0px -70px 0px -66px rgba(0,0,0,0.2);
 }
-
-/*services*/
+/*slick-slider__setings*/
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	z-index: 190;
+	font-size: 0;
+	width: 30px;
+	height: 55px;
+}
+.slider .slick-arrow.slick-prev{
+	left: 0;
+	background: url("../images/slider/slider/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+	right: 0;
+	background: url("../images/slider/slider/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+	 transform: translate(-50%)
+}
+.slider .slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0 10px;
+}
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: #fff solid 2px;
+}
+.slider .slick-dots li button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(235, 235, 235, 0.4);
+	
+}
 
 .services {
 	text-align: center;
