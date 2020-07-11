@@ -57,6 +57,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .cayan {
 	color: #00bff3;
 }
+.grey {
+	color: #959595;
+}
+
 .btn {
 	padding: 10px 25px;
 	border: 1px solid #998675;
@@ -191,6 +195,7 @@ a.nav__links:hover{
 	font-size: 0;
 	width: 30px;
 	height: 55px;
+	color: #d3c1ad;
 }
 .slider .slick-arrow.slick-prev{
 	left: 0;
@@ -299,29 +304,24 @@ a.nav__links:hover{
 	font-size: 18px;
 	padding-top: 15px;
 }
-.purchise__btn {
+a.purchise__btn {
 	margin-top: 50px;
+	color: #fff;
+	margin-bottom: 20px;
+    padding-top: 14px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
 
 .project {
-	text-align: center;
+	
 	padding-top: 85px;
 	padding-bottom: 80px;
 }
 .project__info {
 	color: #555555;
+	text-align: center;
 }
 .project__title {
 	font-size: 30px;
@@ -334,15 +334,6 @@ a.nav__links:hover{
 	margin: 0 auto;
 	color: #8c8c8c;
 }
-.project__inner {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -15px;
-	margin-right: -15px;
-}
-.project__item {
-	margin: 15px;
-}
 .project__menu {
 	margin: 45px 0 40px 0;
 	color: #555555;
@@ -352,22 +343,55 @@ a.nav__links:hover{
 	border: 1px solid #ebebeb;
 	border-radius: 4%;
 	margin: 5px;
-	transition: .3s;
-	
+	transition: .3s;	
 }
 .project-btn:hover {
 	background-color: #998675;
 	color: #ffffff;
-	
+}
+.project__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -17px;
+	margin-right: -17px;
+}
+.project__item {
+	margin: 14px;
+	border: 1px solid #f8f8f8;
+}
+.project__description {
+	background-color: #fbfaf8;
+	transition: .3s;
+}
+.project__description:hover {
+	background-color: #362f2d;
 }
 
-
-
-
-
-
-
-
+.project__item-title {
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 30px;
+	margin-left: 30px;
+	color: #c7b299;
+}
+.project__item-title:hover {
+	color: #fff;
+}
+.project__item-text {
+	padding-top: 15px;
+	color: #8c8c8c;
+	margin-left: 30px;
+	padding-bottom: 30px;
+}
+.project__item-text:hover {
+	color:#c7b299;
+}
+.project__btn2 {
+	text-align: center;
+	max-width: 170px;
+	color: #fff;
+	margin: 40px auto 0 auto;
+}
 
 
 
@@ -632,7 +656,4 @@ line-height: 24px;
 	display: flex;
 	justify-content: space-between;
 	padding: 45px 0;
-}
-.grey {
-	color: #959595;
 }
